@@ -35,7 +35,7 @@ if st.button('Summarize document', type='secondary', icon='📝', use_container_
 st.header('Question Answering', divider=True)
 
 question = st.text_input(label='Question')
-if st.button('Answer question', type='secondary', icon=None, use_container_width=True):
+if st.button('Answer question', type='secondary', icon='❗', use_container_width=True):
     if not uploaded_file:
         st.toast('You must upload a document to use question answering', icon='❌')
     elif len(question) <= 0:
